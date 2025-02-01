@@ -1,13 +1,14 @@
-const Parent = React.createElement("div", { id: "parent" }, [
+import React from "react";
+import ReactDOM from "react-dom/client";
+
+const Parent = React.createElement(
+  "div",
+  { id: "parent" },
   React.createElement("div", { id: "child" }, [
-    React.createElement("h1", {}, "hi i am h1 tag from react"),
-    React.createElement("h2", {}, "hi i am h2 tag from react"),
-  ]),
-  React.createElement("div", { id: "child2" }, [
-    React.createElement("h1", {}, "hi i am h1 tag from react"),
-    React.createElement("h2", {}, "hi i am h2 tag from react"),
-  ]),
-]);
+    React.createElement("h1", {}, "namste react by akshay saini"),
+    React.createElement("h2", {}, "hi"),
+  ])
+);
 
 console.log(Parent); //then can  the
 
@@ -21,3 +22,4 @@ const heading = React.createElement(
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(Parent);
+//ohffk
